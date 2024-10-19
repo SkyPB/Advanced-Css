@@ -5,39 +5,101 @@
 }
 
 body{
-  background-color: rgba(249, 163, 177, 0.97);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  font-family:Georgia, 'Times New Roman', Times, serif 
   padding: 18px;
 }
 
 header{
   font-family: cursive;
-  font-size: 50px;
-  font-weight: bold;
+  font-size: 70px;
   font-style: italic;
   text-align: center;
 }
 
+.icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+}
+
+
 .grid-container{
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 2%;
   row-gap: 5%;
-  margin-top: 3rem;
+  margin-top: 20px;
 }
 
 .card {
-  border: 1px solid red;
+  border: 1px solid black;
   background-color: white;
   color: black;
-  font-weight: bold;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 10px;
 }
 
 .image {
   width: 200px;
   height: 200px;
 }
+
+.button {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  padding: 8px;
+  margin-top: 5px;
+  transition: .2s opacity;
+}
+
+.button:hover{
+  opacity: .8;
+  cursor: pointer;
+}
+
+footer{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: center;
+  padding: 18px;
+  color: black;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+@media(min-width: 992px)  and (max-with: 1280px) {
+      body {
+        flex: 1 1 25%:
+
+      }
+      .card {
+        flex: 1 1 25%;
+      }
+  
+}
+
+@media(min-width: 796px){
+  body {
+    flex: 1 1 25%;
+  }
+  .card {
+    flex: 1 1 25%;
+  }
+}
+
+@media(orientation: portrait){
+  .card{
+    padding: 20px;
+  }
+}
+  
