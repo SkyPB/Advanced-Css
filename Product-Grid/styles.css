@@ -17,11 +17,18 @@ header{
   text-align: center;
 }
 
-.icon {
+/* .icon {
   position: absolute;
   top: 20px;
   right: 20px;
-  font-size: 24px;
+  font-size: 70px;
+} */
+
+.material-icons{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
 }
 
 
