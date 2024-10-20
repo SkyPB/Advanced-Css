@@ -6,7 +6,7 @@
 
 body{
   background-color: white;
-  font-family:Georgia, 'Times New Roman', Times, serif 
+  font-family:Georgia, 'Times New Roman', Times, serif;
   padding: 18px;
 }
 
@@ -77,28 +77,26 @@ footer{
   width: 100%;
 }
 
-@media(min-width: 992px)  and (max-with: 1280px) {
-      body {
-        flex: 1 1 25%:
-
-      }
-      .card {
-        flex: 1 1 25%;
-      }
-  
+@media (max-width: 1280px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  }
 }
 
-@media(min-width: 796px){
-  body {
-    flex: 1 1 25%;
+@media (max-width: 992px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
   }
+}
+
+@media (max-width: 796px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* 1 column */
+  }
+}
+
+@media (orientation: portrait) {
   .card {
-    flex: 1 1 25%;
-  }
-}
-
-@media(orientation: portrait){
-  .card{
     padding: 20px;
   }
 }
